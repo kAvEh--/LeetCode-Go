@@ -1,5 +1,8 @@
 package main
 
+/*MaxProfit
+https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/564/
+*/
 func MaxProfit(prices []int) int {
 	profit := 0
 	low := prices[0]
