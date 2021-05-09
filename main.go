@@ -3,12 +3,13 @@ package main
 import (
 	"flag"
 	"fmt"
+	easy "leet_code/interview-easy"
 )
 
 func main() {
 	problemNumber := flag.Int("problem", 1, "problem number")
 	flag.Parse()
-	data1 := []int{4, 9, 5}
+	data1 := []int{8, 9, 9}
 	data2 := []int{9, 4, 9, 8, 4}
 	switch *problemNumber {
 	case 1:
@@ -23,5 +24,7 @@ func main() {
 		fmt.Println(SingleNumber(data2))
 	case 6:
 		fmt.Println(Intersect(data1, data2))
+	case 7:
+		fmt.Println(easy.PlusOne(data1))
 	}
 }
