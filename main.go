@@ -1,9 +1,9 @@
 package main
 
 import (
+	easy "LeetCode-Go/interview-easy"
 	"flag"
 	"fmt"
-	easy "leet_code/interview-easy"
 )
 
 func main() {
