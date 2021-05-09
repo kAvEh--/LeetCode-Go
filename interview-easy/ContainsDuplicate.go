@@ -1,4 +1,4 @@
-package main
+package interview_easy
 
 /*ContainsDuplicate
 https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/578/

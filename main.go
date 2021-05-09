@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	easy "leet_code/interview-easy"
 )
 
 func main() {
@@ -18,6 +19,6 @@ func main() {
 	case 3:
 		Rotate(data2, 3)
 	case 4:
-		fmt.Println(ContainsDuplicate(data2))
+		fmt.Println(easy.ContainsDuplicate(data2))
 	}
 }
