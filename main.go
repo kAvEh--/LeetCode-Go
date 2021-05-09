@@ -1,7 +1,6 @@
 package main
 
 import (
-	easy "LeetCode-Go/interview-easy"
 	"flag"
 	"fmt"
 )
@@ -10,7 +9,7 @@ func main() {
 	problemNumber := flag.Int("problem", 1, "problem number")
 	flag.Parse()
 	//data1 := []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}
-	data2 := []int{1, 2, 3, 4, 5, 6, 7, 1}
+	data2 := []int{1, 2, 3, 2, 3}
 	switch *problemNumber {
 	case 1:
 		fmt.Println(RemoveDuplicates(data2), data2)
@@ -19,6 +18,8 @@ func main() {
 	case 3:
 		Rotate(data2, 3)
 	case 4:
-		fmt.Println(easy.ContainsDuplicate(data2))
+		fmt.Println(ContainsDuplicate(data2))
+	case 5:
+		fmt.Println(SingleNumber(data2))
 	}
 }
