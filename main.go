@@ -8,8 +8,8 @@ import (
 func main() {
 	problemNumber := flag.Int("problem", 1, "problem number")
 	flag.Parse()
-	//data1 := []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}
-	data2 := []int{1, 2, 3, 2, 3}
+	data1 := []int{4, 9, 5}
+	data2 := []int{9, 4, 9, 8, 4}
 	switch *problemNumber {
 	case 1:
 		fmt.Println(RemoveDuplicates(data2), data2)
@@ -21,5 +21,7 @@ func main() {
 		fmt.Println(ContainsDuplicate(data2))
 	case 5:
 		fmt.Println(SingleNumber(data2))
+	case 6:
+		fmt.Println(Intersect(data1, data2))
 	}
 }
