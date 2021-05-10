@@ -10,7 +10,7 @@ func main() {
 	problemNumber := flag.Int("problem", 1, "problem number")
 	flag.Parse()
 	data1 := []int{0, 0, 1}
-	data2 := []int{0, 9, 4, 0, 8, 4, 0}
+	data2 := []int{2, 7, 11, 15}
 	switch *problemNumber {
 	case 1:
 		fmt.Println(easy.RemoveDuplicates(data2), data2)
@@ -28,5 +28,7 @@ func main() {
 		fmt.Println(easy.PlusOne(data1))
 	case 8:
 		easy.MoveZeroes(data1)
+	case 9:
+		fmt.Println(easy.TwoSum([]int{-3,4,3,90}, 0))
 	}
 }
