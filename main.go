@@ -2,6 +2,7 @@ package main
 
 import (
 	easy "LeetCode-Go/interview-easy"
+	medium "LeetCode-Go/interview-medium"
 	"flag"
 	"fmt"
 )
@@ -34,5 +35,7 @@ func main() {
 		easy.RotateII([][]int{{1, 2}, {3, 4}})
 	case 12:
 		easy.ReverseString([]byte{'H','a','n','n','a','h'})
+	case 101:
+		fmt.Println(medium.ThreeSum([]int{0,0,0}))
 	}
 }
