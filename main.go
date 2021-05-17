@@ -34,8 +34,10 @@ func main() {
 	case 11:
 		easy.RotateII([][]int{{1, 2}, {3, 4}})
 	case 12:
-		easy.ReverseString([]byte{'H','a','n','n','a','h'})
+		easy.ReverseString([]byte{'H', 'a', 'n', 'n', 'a', 'h'})
 	case 101:
-		fmt.Println(medium.ThreeSum([]int{0,0,0}))
+		fmt.Println(medium.ThreeSum([]int{0, 0, 0}))
+	case 102:
+		medium.SetZeroes([][]int{{0, 0, 0, 5}, {4, 3, 1, 4}, {0, 1, 1, 4}, {1, 2, 1, 3}, {0, 0, 1, 1}})
 	}
 }
