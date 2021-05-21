@@ -41,5 +41,7 @@ func main() {
 		medium.SetZeroes([][]int{{0, 0, 0, 5}, {4, 3, 1, 4}, {0, 1, 1, 4}, {1, 2, 1, 3}, {0, 0, 1, 1}})
 	case 103:
 		fmt.Println(medium.GroupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"}))
+	case 104:
+		fmt.Println(medium.LengthOfLongestSubstring("nfpdmpi"))
 	}
 }
