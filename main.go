@@ -5,6 +5,7 @@ import (
 	medium "LeetCode-Go/interview-medium"
 	"flag"
 	"fmt"
+	"strconv"
 )
 
 func main() {
@@ -45,5 +46,18 @@ func main() {
 		fmt.Println(medium.LengthOfLongestSubstring("nfpdmpi"))
 	case 105:
 		fmt.Println(medium.IncreasingTriplet([]int{5, 4, 3, 2, 1}))
+	case 106:
+		l1 := medium.ListNode{Val: 2, Next: &medium.ListNode{Val: 4, Next: &medium.ListNode{Val: 3}}}
+		l2 := medium.ListNode{Val: 5, Next: &medium.ListNode{Val: 6, Next: &medium.ListNode{Val: 4}}}
+		tt := medium.AddTwoNumbers(&l1, &l2)
+		s := ""
+		for {
+			s = strconv.Itoa(tt.Val) + s
+			if tt.Next == nil {
+				break
+			}
+			tt = l1.Next
+		}
+		fmt.Println(s)
 	}
 }
