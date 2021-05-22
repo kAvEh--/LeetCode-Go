@@ -1,7 +1,5 @@
 package interview_medium
 
-import "fmt"
-
 /*LengthOfLongestSubstring
 https://leetcode.com/explore/interview/card/top-interview-questions-medium/103/array-and-strings/779/
 */
@@ -12,7 +10,6 @@ func LengthOfLongestSubstring(s string) int {
 		return 0
 	}
 	for i := 0; i < len(s); i++ {
-		fmt.Println(tmp, start, i)
 		if tmp[s[i]] > 0 {
 			for s[start] != s[i] {
 				tmp[s[start]] -= 1
